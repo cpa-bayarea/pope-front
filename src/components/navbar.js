@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 class NavbarUser extends Component {
     render() {
         return (
@@ -28,7 +26,18 @@ class NavbarUser extends Component {
     }
 
 }
+
+
 class NavbarPublic extends Component {
+
+    goPageLogin = () => {
+        document.location.href = "/login"
+    }
+
+    goPageRegister = () => {
+        document.location.href = "/register"
+        }
+      
     render() {
         return (
             <div>
@@ -43,8 +52,8 @@ class NavbarPublic extends Component {
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                    <li><a href="#">Login <i className="material-icons">person</i></a>  </li>
-                    <li><a href="#">Registre-se <i className="material-icons">person_add</i></a>  </li>
+                    <li><a href="#" onClick={this.goPageLogin}>Login <i className="material-icons">person</i></a>  </li>
+                    <li><a href="#" onClick={this.goPageRegister}>Registre-se <i className="material-icons">person_add</i></a>  </li>
                 </ul>
             </div>
 
