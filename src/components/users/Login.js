@@ -23,6 +23,7 @@ class Login extends React.Component {
     UsersApi.login(this.state).then(res => {
       const { token } = res.data;
       localStorage.setItem('token', token);
+      document.location.href = "/homeUser"
     }).catch(err => {
       console.log(err);
       alert('Credenciais incorretas!');
