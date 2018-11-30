@@ -4,29 +4,13 @@ import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
 
 import './App.css';
 import Routes from './routes/Routes';
+import Navbar from './components/navbar';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <AppBar position="static">
-            <Toolbar className="Toolbar">
-              <Typography variant="title" color="textPrimary">
-                Portal de Pesquisa do TJDFT
-              </Typography>
-              <Link to="/login" className="LoginBtn">
-                <Button color="inherit">
-                  Login
-                </Button>
-              </Link>
-            </Toolbar>
-          </AppBar>
-
-          <div className="Content">
-            <Routes />
-          </div>
-        </div>
+        <Navbar />
       </Router>
     );
   }
