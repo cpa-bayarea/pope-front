@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
+import logo from './imgs/logo.png'
 
 import './App.css';
 import Routes from './routes/Routes';
-import Navbar from './components/navbar';
+import { NavbarPublic } from './components/navbar';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar />
+        <div>
+          <NavbarPublic />
+          <div className="center">
+            <img style={{ marginTop: 20, width: 100, height: 100 }} src={logo} />
+          </div>
+          <div><Routes />
+          </div>
+        </div>
       </Router>
     );
   }

@@ -2,35 +2,56 @@ import React, { Component } from 'react';
 
 
 
-class Navbar extends Component {
+class NavbarUser extends Component {
     render() {
         return (
             <div>
                 <nav>
                     <div className="nav-wrapper indigo">
-                        <a href="#!" className="brand-logo">Logo</a>
-                        <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                        <a href="#!">Portal de Pesquisas</a>
+
+                        <a href="#" data-target="mobile-demo" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
-                            <li><a href="sass.html">Sass</a></li>
-                            <li><a href="badges.html">Components</a></li>
-                            <li><a href="collapsible.html">Javascript</a></li>
-                            <li><a href="mobile.html">Mobile</a></li>
                         </ul>
                     </div>
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="#">Login <i className="material-icons">person</i></a>  </li>
+                    <li><a href="#">Sair <i className="material-icons">person</i></a>  </li>
+                    <li><a href="#">Listar Organizações <i className="material-icons">eye</i></a>  </li>
                 </ul>
             </div>
 
         );
-      
+
+    }
+
+}
+class NavbarPublic extends Component {
+    render() {
+        return (
+            <div>
+                <nav>
+                    <div className="nav-wrapper indigo">
+                        <a href="#!">Portal de Pesquisas</a>
+
+                        <a href="#" data-target="mobile-demo" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
+                        <ul className="right hide-on-med-and-down">
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul className="sidenav" id="mobile-demo">
+                    <li><a href="#">Login <i className="material-icons">person</i></a>  </li>
+                    <li><a href="#">Registre-se <i className="material-icons">person_add</i></a>  </li>
+                </ul>
+            </div>
+
+        );
+
     }
 
 }
 
-export default Navbar;
+export { NavbarUser, NavbarPublic };
