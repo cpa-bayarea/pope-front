@@ -5,6 +5,7 @@ import logo from './imgs/logo.png'
 import './App.css';
 import Routes from './routes/Routes';
 import { NavbarPublic } from './components/navbar';
+import Footer from './components/footer';
 
 class App extends Component {
   render() {
@@ -15,7 +16,9 @@ class App extends Component {
           <div className="center">
             <img style={{ marginTop: 20, width: 100, height: 100 }} src={logo} />
           </div>
-          <div><Routes />
+          <div>
+            <Footer />
+            <Routes />
           </div>
         </div>
       </Router>
