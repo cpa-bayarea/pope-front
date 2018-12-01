@@ -32,27 +32,41 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="Login">
-        <FormControl fullWidth>
-          <InputLabel htmlFor="username">Usuário</InputLabel>
-          <Input
-            id="username"
-            onInput={e => this._handleChange('username', e.target.value)}
-          />
-        </FormControl>
-        <br/>
+      <div>
 
-        <FormControl fullWidth>
-          <InputLabel htmlFor="password">Senha</InputLabel>
-          <Input
-            id="password"
-            type="password"
-            onInput={e => this._handleChange('password', e.target.value)}
-          />
-        </FormControl>
-        <br/>
+        <div className="row">
 
-        <Button fullWidth onClick={() => this.doLogin()}>Login</Button>
+             <div className="col s12 m6 offset-l3 offset-m3 ">
+                    <div className="card center z-depth-3">
+                        <div className="card-content black-text">
+                            <span className="card-title">Faça Login <br /><br /></span>
+                        </div>
+                        <div className="card-body">
+                            <form>
+                                <div className="input-field ">
+                                    <i className="material-icons prefix">account_circle</i>
+                                    <input id="username" type="text" class="validate" id="username" onInput={e => this._handleChange('username', e.target.value)}/>
+                                  <label for="username">Nome de Usuário</label>
+                                </div>
+                                <div className="input-field ">
+                                    <i className="material-icons prefix">lock</i>
+                                    <input id="password" type="password" class="validate" id="password"
+                                  type="password" onInput={e => this._handleChange('password', e.target.value)}/>
+                                <label for="password">Senha</label>
+                                </div>
+
+                            <Button style={{backgroundColor: '#3f51b5'}} onClick={() => this.doLogin()}>Login</Button>
+                            </form>
+                        </div>
+                        <label style={{ marginRight: -560}}>
+                              <a href='#!'><b>Esqueceu sua senha?</b></a>
+                              </label>
+                              <a style={{ float: 'left' }}href="/register">Não tem cadastro? faça aqui o seu!</a>                       
+                            </div>                      
+                      <div className="card-action center">
+                    </div>
+                </div> 
+          </div>
       </div>
     );
   }
