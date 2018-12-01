@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import logo from './imgs/logo.png'
 import './App.css';
 import Routes from './routes/Routes';
 import { NavbarPublic } from './components/navbar';
 import Footer from './components/footer';
+import './icons.css';
 
 class App extends Component {
   render() {

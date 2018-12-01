@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { IconLogin } from '../icons/itens';
 
 class NavbarUser extends Component {
     render() {
@@ -43,7 +44,7 @@ class NavbarPublic extends Component {
             <div>
                 <nav>
                     <div className="nav-wrapper indigo">
-                        <a href="#!">Portal de Pesquisas</a>
+                        <a href="#!">Portal de Pesquisas TJDFT</a>
 
                         <a href="#" data-target="mobile-demo" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
@@ -52,7 +53,7 @@ class NavbarPublic extends Component {
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                    <li><a href="#" onClick={this.goPageLogin}>Login <i className="material-icons">person</i></a>  </li>
+                    <li><a href="#" onClick={this.goPageLogin}><IconLogin /> Login</a></li>
                     <li><a href="#" onClick={this.goPageRegister}>Registre-se <i className="material-icons">person_add</i></a>  </li>
                 </ul>
             </div>
