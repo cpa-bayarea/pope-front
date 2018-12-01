@@ -6,6 +6,7 @@ import Routes from './routes/Routes';
 import { NavbarPublic } from './components/navbar';
 import Footer from './components/footer';
 import './icons.css';
+import Search from './components/Search'
 
 class App extends Component {
   render() {
@@ -15,10 +16,15 @@ class App extends Component {
           <NavbarPublic />
           <div className="center">
             <img style={{ marginTop: 20, width: 100, height: 120 }} src={logo} />
+         
           </div>
-
+          
           <Routes />
-
+          
+          {/* <div>
+            <Search />
+          </div>  */}
+          
           <div>
             <Footer />
           </div>
