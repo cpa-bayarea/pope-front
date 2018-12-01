@@ -16,10 +16,13 @@ class App extends Component {
           <div className="center">
             <img style={{ marginTop: 20, width: 100, height: 100 }} src={logo} />
           </div>
+
+          <Routes />
+
           <div>
-            <Footer />
-            <Routes />
+            <Footer />  
           </div>
+          
         </div>
       </Router>
     );
