@@ -6,11 +6,31 @@ class Register extends Component {
             <div className="row">
                 <div className="col s12 m6 offset-l3 offset-m3 ">
                     <div className="card center z-depth-3">
-                        <div className="card-content white-text">
-                            <span className="card-title">Card Title</span>
-      
+                        <div className="card-content black-text">
+                            <span className="card-title">Cadastro <br /><br /> <i className="medium material-icons prefix">account_circle</i></span>
                         </div>
-                        <div className="card-action center">
+                        <div className="card-body">
+                            <form>
+                                <div className="input-field ">
+                                    <i className="material-icons prefix">account_circle</i>
+                                    <input id="username" type="text" name="name" className="validate" />
+                                    <label for="username">Nome de usuário</label>
+                                </div>
+                                <div className="input-field ">
+                                    <i className="material-icons prefix">lock</i>
+                                    <input id="password" type="password" name="name" className="validate" />
+                                    <label for="password">Senha</label>
+                                </div>
+
+                                <div className="input-field ">
+                                    <i className="material-icons prefix">lock</i>
+                                    <input id="confirm_password" type="password" name="name" className="validate" />
+                                    <label for="confirm_password">Confirme a Senha</label>
+                                </div>
+                                <input id="confirm_password" type="submit" name="name" value="Enviar" className="btn green" />
+                            </form>
+                        </div>
+                        <div className="card-action">
                             <a className='btn blue' href="#">This is a link</a>
                             <a className='btn yellow' href="#">This is a link</a>
                         </div>

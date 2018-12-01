@@ -14,7 +14,7 @@ class App extends Component {
         <div>
           <NavbarPublic />
           <div className="center">
-            <img style={{ marginTop: 20, width: 100, height: 100 }} src={logo} />
+            <img style={{ marginTop: 20, width: 100, height: 120 }} src={logo} />
           </div>
 
           <Routes />
