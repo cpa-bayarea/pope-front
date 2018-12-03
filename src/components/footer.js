@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-
 import logo from "../imgs/logobay.png";
 
 class Footer extends Component {
     render() {
         return (
             <div>
-                <footer class="page-footer indigo">
+                <footer class="page-footer indigo" style={{ bottom: 0}}>
                     <div class="container">
                         <div class="row">
                             <div class="col l6 s12">

@@ -1,7 +1,7 @@
 html, body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .App {
   width: 100vw;
@@ -22,4 +22,3 @@ html, body {
   margin-right: 30px !important;
   color: white !important;
 }
-

@@ -7,7 +7,7 @@ class Register extends Component {
                 <div className="col s12 m6 offset-l3 offset-m3 ">
                     <div className="card center z-depth-3">
                         <div className="card-content black-text">
-                            <span className="card-title">Cadastro <br /><br /> <i className="medium material-icons prefix">account_circle</i></span>
+                            <span className="card-title">Solicite o seu cadastro <br /><br /></span>
                         </div>
                         <div className="card-body">
                             <form>
@@ -31,8 +31,8 @@ class Register extends Component {
                             </form>
                         </div>
                         <div className="card-action">
-                            <a className='btn blue' href="#">This is a link</a>
-                            <a className='btn yellow' href="#">This is a link</a>
+                            <a className='btn blue' href="/login">Já possui cadastro? faça seu login aqui</a>
+                           
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, FormControl, InputLabel, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import UsersApi from './UsersApi';
 import './Login.css';
 
@@ -39,7 +39,7 @@ class Login extends React.Component {
              <div className="col s12 m6 offset-l3 offset-m3 ">
                     <div className="card center z-depth-3">
                         <div className="card-content black-text">
-                            <span className="card-title">Faça Login <br /><br /></span>
+                            <span className="card-title">Faça seu login <br /><br /></span>
                         </div>
                         <div className="card-body">
                             <form>
@@ -58,7 +58,7 @@ class Login extends React.Component {
                             <Button style={{backgroundColor: '#3f51b5'}} onClick={() => this.doLogin()}>Login</Button>
                             </form>
                         </div>
-                        <label style={{ marginRight: -560}}>
+                        <label style={{ marginRight: -410}}>
                               <a href='#!'><b>Esqueceu sua senha?</b></a>
                               </label>
                               <a style={{ float: 'left' }}href="/register">Não tem cadastro? faça aqui o seu!</a>                       
