@@ -16,7 +16,7 @@ class NavbarUser extends Component {
             <div>
                 <nav>
                     <div className="nav-wrapper indigo">
-                        <a>Portal de Pesquisas</a>
+                        <a style={{fontSize: '2.1rem' }}>Portal de Pesquisas TJDFT</a>
 
                         <a href="#" data-target="mobile-demo" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
@@ -53,7 +53,7 @@ class NavbarPublic extends Component {
             <div>
                 <nav>
                     <div className="nav-wrapper indigo">
-                        <a href="#!">Portal de Pesquisas TJDFT</a>
+                        <a style={{fontSize: '2.1rem' }}>Portal de Pesquisas TJDFT</a>
 
                         <a href="#" data-target="mobile-demo" className="sidenav-trigger show-on-large"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
