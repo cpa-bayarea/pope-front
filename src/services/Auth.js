@@ -1,6 +1,6 @@
 import UsersApi from '../components/users/UsersApi'
 
-//Classe ainda não implementada
+//CLASSE EM CONSTRUÇÃO
 
 class Auth {
     
