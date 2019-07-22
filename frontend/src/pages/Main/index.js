@@ -1,23 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { Container, Form, SubmitButton } from './styles';
+import api from '../../services/api';
+import { Container, Form, SubmitButton, Logo } from './styles';
+import logoTjdft from '../../assets/tjdft.png';
 
-export default function Main() {
-  return (
-    <Container>
-      <h1>
-        <FaSearch />
-        Portal de Pesquisa - Justiça Comunitária <br />
-        <small>TJDFT</small>
-      </h1>
+export default class Main extends Component {
+  handleSubmit = async e => {
+    e.preventDefault();
 
-      <Form onSubmit={() => {}}>
-        <input type="text" placeholder="Pesquisar" />
+    const response = await api.get(`/search/`);
+  };
 
-        <SubmitButton>
-          <FaSearch color="#000" size={14} />
-        </SubmitButton>
-      </Form>
-    </Container>
-  );
+  render() {
+    return (
+      <>
+        <Logo>
+          <img
+            width="100"
+            height="100"
+            src={logoTjdft}
+            alt="logotjdft"
+            style={{ marginLeft: 298 }}
+          />
+        </Logo>
+
+        <Container>
+          <h1>
+            Portal de Pesquisa - Justiça Comunitária <br />
+            <small>TJDFT</small>
+          </h1>
+
+          <Form onSubmit={this.handleSubmit}>
+            <input type="text" placeholder="Pesquisar" />
+
+            <SubmitButton>
+              <FaSearch color="#000" size={14} />
+              Pesquisar na Justiça Comunitária
+            </SubmitButton>
+          </Form>
+        </Container>
+      </>
+    );
+  }
 }
