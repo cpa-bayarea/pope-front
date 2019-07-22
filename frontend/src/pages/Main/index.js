@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import api from '../../services/api';
-import { Container, Form, SubmitButton, Logo } from './styles';
+import { Container, Form, SubmitButton, Logo, Footer } from './styles';
 import logoTjdft from '../../assets/tjdft.png';
 
 export default class Main extends Component {
@@ -39,6 +39,8 @@ export default class Main extends Component {
             </SubmitButton>
           </Form>
         </Container>
+
+        <Footer />
       </>
     );
   }
