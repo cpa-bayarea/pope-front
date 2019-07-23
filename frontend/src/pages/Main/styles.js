@@ -76,4 +76,13 @@ export const Footer = styled.footer`
   width: 100%;
   background: #4682b4;
   text-align: center;
+
+  svg {
+    margin-right: 10px;
+
+  }
+
+  b {
+    font-size: 15px;
+  }
 `;

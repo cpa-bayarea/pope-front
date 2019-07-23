@@ -31,11 +31,11 @@ export default class Main extends Component {
           </h1>
 
           <Form onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="Pesquisar" />
+            <input type="text" placeholder="digite o que precisa" style={{fontStyle: 'italic'}} />
 
             <SubmitButton>
               <FaSearch color="#000" size={14} />
-              Pesquisar na Justiça Comunitária
+             <b> Pesquisar na Justiça Comunitária</b>
             </SubmitButton>
           </Form>
         </Container>
@@ -44,8 +44,7 @@ export default class Main extends Component {
           <p>
             <b>
               {' '}
-              © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay
-              Area e 360Tech
+              © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay Area <FaGithub />
             </b>
           </p>
         </Footer>
