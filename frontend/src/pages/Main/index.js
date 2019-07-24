@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { FaSearch, FaGithub } from 'react-icons/fa';
 import api from '../../services/api';
-import { Container, Form, SubmitButton, Logo, Footer } from './styles';
+import { Container, Form, SubmitButton, Logo } from './styles';
+import Footer from '../../components/Footer/footer';
 import logoTjdft from '../../assets/tjdft.png';
 
 export default class Main extends Component {
   handleSubmit = async e => {
     e.preventDefault();
 
-    const response = await api.get(`/search/`);
+    // const response = await api.get(`/search/`);
+
+    document.location.href = '/results';
   };
 
   render() {
@@ -31,11 +34,15 @@ export default class Main extends Component {
           </h1>
 
           <Form onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="digite o que precisa" style={{fontStyle: 'italic'}} />
+            <input
+              type="text"
+              placeholder="digite o que precisa"
+              style={{ fontStyle: 'italic' }}
+            />
 
             <SubmitButton>
               <FaSearch color="#000" size={14} />
-             <b> Pesquisar na Justiça Comunitária</b>
+              <b> Pesquisar na Justiça Comunitária</b>
             </SubmitButton>
           </Form>
         </Container>
@@ -44,7 +51,8 @@ export default class Main extends Component {
           <p>
             <b>
               {' '}
-              © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay Area <FaGithub />
+              © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay
+              Area <FaGithub />
             </b>
           </p>
         </Footer>
