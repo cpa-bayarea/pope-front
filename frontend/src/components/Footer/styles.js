@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Footer = styled.footer`
+const FooterComponent = styled.footer`
   border-top: 1px solid #e7e7e7;
   padding: 20px;
   position: fixed;
@@ -9,7 +9,6 @@ const Footer = styled.footer`
   height: 60px;
   width: 100%;
   background: #4682b4;
-  text-align: center;
 
   svg {
     margin-right: 10px;
@@ -20,4 +19,4 @@ const Footer = styled.footer`
   }
 `;
 
-export default Footer;
+export default FooterComponent;

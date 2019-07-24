@@ -17,7 +17,7 @@ import {
   Title,
   Card,
 } from './styles';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/tjdft.png';
 
 export default class Results extends Component {
@@ -162,13 +162,7 @@ export default class Results extends Component {
           </table>
         </Panel>
 
-        <Footer>
-          <b>
-            {' '}
-            © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay
-            Area <FaGithub />
-          </b>
-        </Footer>
+        <Footer />
       </>
     );
   }

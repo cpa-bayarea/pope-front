@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FaSearch, FaGithub } from 'react-icons/fa';
 import api from '../../services/api';
 import { Container, Form, SubmitButton, Logo } from './styles';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/tjdft.png';
 
 export default class Main extends Component {
@@ -47,15 +47,7 @@ export default class Main extends Component {
           </Form>
         </Container>
 
-        <Footer>
-          <p>
-            <b>
-              {' '}
-              © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay
-              Area <FaGithub />
-            </b>
-          </p>
-        </Footer>
+        <Footer />
       </>
     );
   }

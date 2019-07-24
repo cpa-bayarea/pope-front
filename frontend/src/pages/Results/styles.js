@@ -65,6 +65,7 @@ export const Logo = styled.div`
 `;
 
 export const Panel = styled.div`
+  max-width: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin: 140px auto;
