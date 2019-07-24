@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { FaSearch, FaGithub } from 'react-icons/fa';
-import api from '../../services/api';
+import { FaSearch } from 'react-icons/fa';
+// import api from '../../services/api';
 import { Container, Form, SubmitButton, Logo } from './styles';
+import Modal from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/tjdft.png';
 
@@ -17,6 +18,7 @@ export default class Main extends Component {
   render() {
     return (
       <>
+        <Modal />
         <Logo>
           <img
             width="100"
