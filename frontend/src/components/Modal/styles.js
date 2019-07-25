@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ModalComponent = styled.div`
+const Section = styled.div`
   max-width: 200px;
   background: #fff;
   margin: -110px auto;
@@ -8,6 +8,13 @@ const ModalComponent = styled.div`
   margin-right: 20px;
   align-items: center;
   float: right;
+  border-radius: 20px;
+
+  b,
+  h1,
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 `;
 
-export default ModalComponent;
+export default Section;

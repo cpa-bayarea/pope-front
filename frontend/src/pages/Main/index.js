@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 import { Container, Form, SubmitButton, Logo } from './styles';
 import Modal from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
-import logoTjdft from '../../assets/tjdft.png';
+import logoTjdft from '../../assets/img/tjdft.png';
 
 export default class Main extends Component {
   handleSubmit = async e => {

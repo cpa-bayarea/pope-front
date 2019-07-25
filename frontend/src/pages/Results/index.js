@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import {
   FaSearch,
-  FaGithub,
   FaMapMarkerAlt,
   FaPhone,
   FaClock,
   FaList,
 } from 'react-icons/fa';
-import api from '../../services/api';
+// import api from '../../services/api';
 import {
   Container,
   Form,
@@ -17,19 +16,21 @@ import {
   Title,
   Card,
 } from './styles';
+import Modal from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
-import logoTjdft from '../../assets/tjdft.png';
+import logoTjdft from '../../assets/img/tjdft.png';
 
 export default class Results extends Component {
   handleSubmit = async e => {
     e.preventDefault();
 
-    const response = await api.get(`/results/`);
+    // const response = await api.get(`/results/`);
   };
 
   render() {
     return (
       <>
+        <Modal />
         <Logo>
           <img
             width="100"
