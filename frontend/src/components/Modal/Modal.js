@@ -40,7 +40,7 @@ export default class ModalComponent extends Component {
             value="Open"
             onClick={() => this.openModal()}
           />{' '}
-          Saiba Mais
+          Fale Conosco
         </h1>
         <Modal
           visible={this.state.visible}
@@ -49,20 +49,19 @@ export default class ModalComponent extends Component {
           effect="fadeInUp"
           onClickAway={() => this.closeModal()}
         >
-          <div>
+          <div style={{ borderStyle: 'inset', borderColor: '#4682b4' }}>
             <br />
 
-            <br />
             <p style={{ textAlign: 'center' }}>
               <b>Entre em contato com a Justiça Comunitária</b>
             </p>
             <br />
             <p style={{ marginLeft: 5 }}>
-              Telefones{' '}
+              Telefones
               <FaPhone
-                style={{ marginLeft: -1, marginBottom: -1, marginRight: 2 }}
+                style={{ marginLeft: 3, marginBottom: -1, marginRight: 2 }}
               />
-              :
+              : (61) 3103-7942 e 6780 (Brasília); 3103-9319 (Ceilândia)
             </p>
             <br />
             <p style={{ marginLeft: 5 }}>
@@ -70,7 +69,7 @@ export default class ModalComponent extends Component {
               <FaEnvelope
                 style={{ marginLeft: 4, marginBottom: -2, marginRight: 2 }}
               />
-              :
+              : justicom@tjdft.jus.br
             </p>
             <br />
 
@@ -84,7 +83,7 @@ export default class ModalComponent extends Component {
             </h1>
             <br />
             <br />
-            <a onClick={() => this.closeModal()}>
+            <a onClick={() => this.closeModal()} style={{ marginLeft: 250 }}>
               Fechar{' '}
               <FaWindowClose style={{ marginLeft: 1, marginBottom: -3 }} />
             </a>
