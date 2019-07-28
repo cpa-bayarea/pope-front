@@ -30,9 +30,6 @@ export default class Results extends Component {
   render() {
     return (
       <>
-        <div style={{ padding: 40, marginRight: -40 }}>
-          <ModalComponent />
-        </div>
         <Logo>
           <img
             width="100"

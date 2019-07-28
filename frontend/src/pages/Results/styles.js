@@ -79,6 +79,7 @@ export const Card = styled.div`
   box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
   margin: 50px;
+  border-radius: 5px;
 `;
 
 export const Title = styled.h1`
