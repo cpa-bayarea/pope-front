@@ -16,7 +16,7 @@ import {
   Title,
   Card,
 } from './styles';
-import Modal from '../../components/Modal/Modal';
+import ModalComponent from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 
@@ -30,7 +30,9 @@ export default class Results extends Component {
   render() {
     return (
       <>
-        <Modal />
+        <div style={{ padding: 40, marginRight: -40 }}>
+          <ModalComponent />
+        </div>
         <Logo>
           <img
             width="100"
