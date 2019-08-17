@@ -10,8 +10,9 @@ export default function Footer() {
           <b>Tribunal de Justiça do Distrito Federal e Territórios</b>
           <b style={{ float: 'right' }}>
             {' '}
-            © 2018 - 2019 Desenvolvido por Centro de Práticas Acadêmicas - Bay
-            Area <FaGithub />
+            © 2018 - 2019 Distribuído por Centro de Práticas Acadêmicas - Bay
+            Area. Desenvolvido por Lucas Manoel e Thiago Lago
+            <FaGithub />
           </b>
         </p>
       </FooterComponent>

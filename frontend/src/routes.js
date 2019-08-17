@@ -9,6 +9,10 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/results" component={Results} />
+        {/* <Route path="/api/area" />
+        <Route path="/organizations" />
+        <Route path="/api/subarea" />
+        <Route path="/api/query -like" /> */}
       </Switch>
     </BrowserRouter>
   );

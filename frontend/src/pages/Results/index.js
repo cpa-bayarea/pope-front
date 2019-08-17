@@ -16,7 +16,7 @@ import {
   Title,
   Card,
 } from './styles';
-import ModalComponent from '../../components/Modal/Modal';
+// import ModalComponent from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 
