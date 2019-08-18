@@ -7,15 +7,35 @@ import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 
 export default class Main extends Component {
+  state = {
+    search: '',
+  };
+
+  handleInputChange = e => {
+    this.setState({ search: e.target.value });
+  };
+
   handleSubmit = async e => {
     e.preventDefault();
+    // console.log(this.state.search);
 
     // const response = await api.get(`/search/`);
 
+    // const data = {
+    //   name: response.data.name,
+    //   tell: response.data.tell,
+    //   adress: response.data.adress,
+    //   city: response.data.city,
+    //   attendance: response.data.attendance,
+    // };
+
+    // Por enquanto
     document.location.href = '/results';
   };
 
   render() {
+    const { search } = this.state;
+
     return (
       <>
         <Modal />
@@ -40,6 +60,8 @@ export default class Main extends Component {
               type="text"
               placeholder="digite o que precisa"
               style={{ fontStyle: 'italic' }}
+              value={search}
+              onChange={this.handleInputChange}
             />
 
             <SubmitButton>
