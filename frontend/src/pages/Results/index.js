@@ -7,20 +7,21 @@ import {
   FaList,
 } from 'react-icons/fa';
 // import api from '../../services/api';
-import {
-  Container,
-  Form,
-  SubmitButton,
-  Logo,
-  Panel,
-  Title,
-  Card,
-} from './styles';
+import Card from 'react-bootstrap/Card';
+import { Container, Form, SubmitButton, Logo, Panel, Title } from './styles';
 // import ModalComponent from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 
 export default class Results extends Component {
+  state = {
+    title: 'Cartório da Ceilândia',
+    adress: 'QNM Alguma Coisa 04',
+    tell: '(61) 3333-0000',
+    attendence: '08h às 19h',
+    services: 'Autenticação de Documentos',
+  };
+
   handleSubmit = async e => {
     e.preventDefault();
 
@@ -61,107 +62,31 @@ export default class Results extends Component {
         </Container>
 
         <Panel>
-          <table>
-            <tr>
-              <td>
-                <Card>
-                  <Title>Cartório</Title>
-                  <br />
-                  <tr>
-                    <FaMapMarkerAlt /> Endereço:
-                  </tr>
-                  <tr>
-                    <FaPhone /> Telefone:
-                  </tr>
-                  <tr>
-                    <FaClock /> Atendimento:
-                  </tr>
-                  <tr>
-                    <FaList /> Serviços:
-                  </tr>
-                </Card>
-              </td>
-
-              <td>
-                <Card>
-                  <Title>Ministério Público</Title>
-                  <br />
-                  <tr>
-                    <FaMapMarkerAlt /> Endereço:
-                  </tr>
-                  <tr>
-                    <FaPhone /> Telefone:
-                  </tr>
-                  <tr>
-                    <FaClock /> Atendimento:
-                  </tr>
-                  <tr>
-                    <FaList /> Serviços:
-                  </tr>
-                </Card>
-              </td>
-
-              <td>
-                <Card>
-                  <Title>Infos</Title>
-                  <br />
-                  <tr>
-                    <FaMapMarkerAlt /> Endereço:
-                  </tr>
-                  <tr>
-                    <FaPhone /> Telefone:
-                  </tr>
-                  <tr>
-                    <FaClock /> Atendimento:
-                  </tr>
-                  <tr>
-                    <FaList /> Serviços:
-                  </tr>
-                </Card>
-              </td>
-              <br />
-
-              <td>
-                <Card>
-                  <Title>Infos</Title>
-                  <br />
-                  <tr>
-                    <FaMapMarkerAlt /> Endereço:
-                  </tr>
-                  <tr>
-                    <FaPhone /> Telefone:
-                  </tr>
-                  <tr>
-                    <FaClock /> Atendimento:
-                  </tr>
-                  <tr>
-                    <FaList /> Serviços:
-                  </tr>
-                </Card>
-              </td>
-
-              <td>
-                <Card>
-                  <Title>Infos</Title>
-                  <br />
-                  <tr>
-                    <FaMapMarkerAlt /> Endereço:
-                  </tr>
-                  <tr>
-                    <FaPhone /> Telefone:
-                  </tr>
-                  <tr>
-                    <FaClock /> Atendimento:
-                  </tr>
-                  <tr>
-                    <FaList /> Serviços:
-                  </tr>
-                </Card>
-              </td>
-            </tr>
-          </table>
+          <div>
+            <Card style={{ width: '18rem' }} className="ml-2 mr-2">
+              <Card.Body>
+                <Title> {this.state.title} </Title>
+                <br />
+                <tr>
+                  <FaMapMarkerAlt />
+                  {this.state.adress}
+                </tr>
+                <tr>
+                  <FaPhone />
+                  {this.state.tell}
+                </tr>
+                <tr>
+                  <FaClock />
+                  {this.state.attendence}
+                </tr>
+                <tr>
+                  <FaList />
+                  {this.state.services}
+                </tr>
+              </Card.Body>
+            </Card>
+          </div>
         </Panel>
-
         <Footer />
       </>
     );
