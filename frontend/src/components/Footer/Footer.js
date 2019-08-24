@@ -11,7 +11,7 @@ export default function Footer() {
           <b style={{ float: 'right' }}>
             {' '}
             © 2018 - 2019 Distribuído por Centro de Práticas Acadêmicas - Bay
-            Area. Desenvolvido por Lucas Manoel e Thiago Lago
+            Area. Desenvolvido por José Kimura, Lucas Manoel e Thiago Lago
             <FaGithub />
           </b>
         </p>
