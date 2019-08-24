@@ -5,15 +5,52 @@ import {
   FaPhone,
   FaClock,
   FaList,
+  FaThumbsUp,
 } from 'react-icons/fa';
 // import api from '../../services/api';
 import Card from 'react-bootstrap/Card';
 import { Container, Form, SubmitButton, Logo, Panel, Title } from './styles';
-// import ModalComponent from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 
 export default class Results extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     list: [
+  //       {
+  //         title: 'Cartório da Ceilândia',
+  //         adress: 'QNM Alguma Coisa 04',
+  //         tell: '(61) 3333-0000',
+  //         attendence: '08h às 19h',
+  //         services: 'Autenticação de Documentos',
+  //       },
+  //       {
+  //         title: 'Cartório da Samambaia',
+  //         adress: 'QNM Alguma Coisa 04',
+  //         tell: '(61) 3333-0000',
+  //         attendence: '08h às 19h',
+  //         services: 'Autenticação de Documentos',
+  //       },
+  //       {
+  //         title: 'Cartório do Riacho Fundo I',
+  //         adress: 'QNM Alguma Coisa 04',
+  //         tell: '(61) 3333-0000',
+  //         attendence: '08h às 19h',
+  //         services: 'Autenticação de Documentos',
+  //       },
+  //       {
+  //         title: 'Cartório do Núcleo Bandeirante',
+  //         adress: 'QNM Alguma Coisa 04',
+  //         tell: '(61) 3333-0000',
+  //         attendence: '08h às 19h',
+  //         services: 'Autenticação de Documentos',
+  //       },
+  //     ],
+  //   };
+  // }
+
   state = {
     title: 'Cartório da Ceilândia',
     adress: 'QNM Alguma Coisa 04',
@@ -63,28 +100,32 @@ export default class Results extends Component {
 
         <Panel>
           <div>
-            <Card style={{ width: '18rem' }} className="ml-2 mr-2">
-              <Card.Body>
-                <Title> {this.state.title} </Title>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  {this.state.adress}
-                </tr>
-                <tr>
-                  <FaPhone />
-                  {this.state.tell}
-                </tr>
-                <tr>
-                  <FaClock />
-                  {this.state.attendence}
-                </tr>
-                <tr>
-                  <FaList />
-                  {this.state.services}
-                </tr>
-              </Card.Body>
-            </Card>
+            <div>
+              <Card style={{ width: '18rem' }} className="ml-2 mr-2">
+                <Card.Body>
+                  <Title> {this.state.title} </Title>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    {this.state.adress}
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    {this.state.tell}
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    {this.state.attendence}
+                  </tr>
+                  <tr>
+                    <FaList />
+                    {this.state.services}
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+            </div>
           </div>
         </Panel>
         <Footer />
