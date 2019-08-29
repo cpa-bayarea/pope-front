@@ -55,7 +55,9 @@ function MyVerticallyCenteredModal(props) {
         </h1>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Fechar</Button>
+        <Button onClick={props.onHide} style={{ borderRadius: 38 }}>
+          Fechar
+        </Button>
       </Modal.Footer>
     </Modal>
   );
@@ -72,8 +74,6 @@ function ModalComponent() {
         style={{
           marginLeft: 'auto',
           borderRadius: 38,
-          background: '#4682b4',
-          color: '#000',
         }}
       >
         <FaInfoCircle /> Saiba Mais

@@ -8,7 +8,7 @@ const FooterComponent = styled.footer`
   bottom: 0;
   height: 60px;
   width: 100%;
-  background: #4682b4;
+  background: #0069d9;
 
   svg {
     margin-right: 10px;
@@ -16,6 +16,7 @@ const FooterComponent = styled.footer`
 
   b {
     font-size: 15px;
+    color: #fff;
   }
 `;
 

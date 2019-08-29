@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import ModalFooter from 'react-bootstrap/ModalFooter';
 import FooterComponent from './styles';
 
 export default function Footer() {

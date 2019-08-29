@@ -12,6 +12,7 @@ import { Container, Form, SubmitButton, Logo, Panel, Title } from './styles';
 import Footer from '../../components/Footer/Footer';
 import logoTjdft from '../../assets/img/tjdft.png';
 import ModalComponent from '../../components/Modal/Modal';
+import Button from 'react-bootstrap/Button';
 
 export default class Results extends Component {
   // constructor(props) {
@@ -80,11 +81,16 @@ export default class Results extends Component {
         <ModalComponent />
         <Logo>
           <img
+            className="responsive"
             width="100"
             height="100"
             src={logoTjdft}
             alt="logotjdft"
-            style={{ marginLeft: 100 }}
+            style={{
+              marginLeft: 100,
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
           />
         </Logo>
 
@@ -101,10 +107,10 @@ export default class Results extends Component {
               style={{ fontStyle: 'italic' }}
             />
 
-            <SubmitButton>
-              <FaSearch color="#000" size={14} />
+            <Button type="submit" style={{ borderRadius: 38 }}>
+              <FaSearch color="#fff" size={14} />
               <b> Pesquisar na Justiça Comunitária</b>
-            </SubmitButton>
+            </Button>
           </Form>
         </Container>
 
