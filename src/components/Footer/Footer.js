@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import ModalFooter from 'react-bootstrap/ModalFooter';
 import FooterComponent from './styles';
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
     <>
       <FooterComponent>
         <p>
-          <b>Tribunal de Justiça do Distrito Federal e Territórios</b>
+          <b>Portal de Pesquisas POPE</b>
           <b style={{ float: 'right' }}>
             {' '}
             © 2018 - 2019 Distribuído por Centro de Práticas Acadêmicas - Bay

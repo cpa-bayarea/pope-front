@@ -15,7 +15,7 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Entre em contato com a Justiça Comunitária
+          Entre em contato
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -29,7 +29,7 @@ function MyVerticallyCenteredModal(props) {
               marginTop: -6,
             }}
           />
-          : (61) 3103-7942 e 6780 (Brasília); 3103-9319 (Ceilândia)
+          : (61) 0000-0000 e 0000 (Brasília); 0000-0000 (Ceilândia)
         </p>
         <p style={{ marginLeft: 5, marginTop: -7 }}>
           Email
@@ -41,18 +41,18 @@ function MyVerticallyCenteredModal(props) {
               marginTop: -4,
             }}
           />
-          : justicom@tjdft.jus.br
+          : email@email.com.br
         </p>
-        <h1 style={{ marginLeft: 2 }}>
+        <h3 style={{ marginLeft: 2 }}>
           {' '}
-          Cartilha da Justiça Comunitária -{' '}
+          Cartilha -{' '}
           <Link>
             Baixar Aqui{' '}
             <FaDownload
               style={{ marginLeft: 3, marginBottom: -1, marginTop: -6 }}
             />
           </Link>{' '}
-        </h1>
+        </h3>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide} style={{ borderRadius: 38 }}>
