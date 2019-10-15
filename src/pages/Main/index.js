@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { FaSearch } from 'react-icons/fa';
-// import api from '../../services/api';
 import Button from 'react-bootstrap/Button';
-import { Container, Form, SubmitButton, Logo } from './styles';
+import { Container, Form, Logo } from './styles';
 import Modal from '../../components/Modal/Modal';
 import Footer from '../../components/Footer/Footer';
-import logoTjdft from '../../assets/img/tjdft.png';
+import logoBay from '../../assets/img/logobay.png';
 
 export default class Main extends Component {
   state = {
@@ -45,8 +44,8 @@ export default class Main extends Component {
             className="responsive"
             width="100"
             height="100"
-            src={logoTjdft}
-            alt="logotjdft"
+            src={logoBay}
+            alt="logoBay"
             style={{
               marginLeft: 298,
               justifyContent: 'center',
@@ -57,8 +56,9 @@ export default class Main extends Component {
 
         <Container>
           <h1>
-            Portal de Pesquisa - Justiça Comunitária <br />
-            <small>TJDFT</small>
+            Portal de Pesquisa
+            <br />
+            <small>POPE</small>
           </h1>
 
           <Form onSubmit={this.handleSubmit}>
@@ -72,7 +72,7 @@ export default class Main extends Component {
 
             <Button type="submit" style={{ borderRadius: 38 }}>
               <FaSearch color="#fff" size={14} />
-              <b> Pesquisar na Justiça Comunitária</b>
+              <b>Pesquisar</b>
             </Button>
           </Form>
         </Container>

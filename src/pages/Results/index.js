@@ -10,7 +10,7 @@ import {
 import Card from 'react-bootstrap/Card';
 import { Container, Form, SubmitButton, Logo, Panel, Title } from './styles';
 import Footer from '../../components/Footer/Footer';
-import logoTjdft from '../../assets/img/tjdft.png';
+import logoBay from '../../assets/img/logobay.png';
 import ModalComponent from '../../components/Modal/Modal';
 import Button from 'react-bootstrap/Button';
 
@@ -84,8 +84,8 @@ export default class Results extends Component {
             className="responsive"
             width="100"
             height="100"
-            src={logoTjdft}
-            alt="logotjdft"
+            src={logoBay}
+            alt="logoBay"
             style={{
               marginLeft: 100,
               justifyContent: 'center',
@@ -96,8 +96,9 @@ export default class Results extends Component {
 
         <Container>
           <h1>
-            Portal de Pesquisa - Justiça Comunitária <br />
-            <small>TJDFT</small>
+            Portal de Pesquisas
+            <br />
+            <small>POPE</small>
           </h1>
 
           <Form onSubmit={this.handleSubmit}>
