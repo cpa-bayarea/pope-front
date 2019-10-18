@@ -8,50 +8,13 @@ import {
   FaThumbsUp,
 } from 'react-icons/fa';
 import Card from 'react-bootstrap/Card';
-import { Container, Form, SubmitButton, Logo, Panel, Title } from './styles';
+import Button from 'react-bootstrap/Button';
+import { Container, Form, Title, Logo, Panel } from './styles';
 import Footer from '../../components/Footer/Footer';
 import logoBay from '../../assets/img/logobay.png';
 import ModalComponent from '../../components/Modal/Modal';
-import Button from 'react-bootstrap/Button';
 
-export default class Results2 extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     list: [
-  //       {
-  //         title: 'Cartório da Ceilândia',
-  //         adress: 'QNM Alguma Coisa 04',
-  //         tell: '(61) 3333-0000',
-  //         attendence: '08h às 19h',
-  //         services: 'Autenticação de Documentos',
-  //       },
-  //       {
-  //         title: 'Cartório da Samambaia',
-  //         adress: 'QNM Alguma Coisa 04',
-  //         tell: '(61) 3333-0000',
-  //         attendence: '08h às 19h',
-  //         services: 'Autenticação de Documentos',
-  //       },
-  //       {
-  //         title: 'Cartório do Riacho Fundo I',
-  //         adress: 'QNM Alguma Coisa 04',
-  //         tell: '(61) 3333-0000',
-  //         attendence: '08h às 19h',
-  //         services: 'Autenticação de Documentos',
-  //       },
-  //       {
-  //         title: 'Cartório do Núcleo Bandeirante',
-  //         adress: 'QNM Alguma Coisa 04',
-  //         tell: '(61) 3333-0000',
-  //         attendence: '08h às 19h',
-  //         services: 'Autenticação de Documentos',
-  //       },
-  //     ],
-  //   };
-  // }
-
+export default class ResultsOld extends Component {
   state = {
     title: 'Ofício de Notas e Protesto de Títulos de Ceilândia',
     adress: 'CNM 01, BLOCO H, LOJAS 01/03',

@@ -15,7 +15,7 @@ import Card from 'react-bootstrap/Card';
 import Footer from '../../components/Footer/Footer';
 import logoBay from '../../assets/img/logobay.png';
 import ModalComponent from '../../components/Modal/Modal';
-import './css.css';
+import { Container } from './styles';
 
 export default class Results extends Component {
   render() {
@@ -23,251 +23,253 @@ export default class Results extends Component {
       <>
         <ModalComponent />
 
-        <div className="container-fluid row">
-          <div className="container-fluid my-header-1 col-sm-6">
-            <Image
-              className="my-img"
-              src={logoBay}
-              style={{
-                marginLeft: 136,
-                maxWidth: 10000,
-              }}
-            />
-          </div>
-          <div className="container-fluid my-header-2 col-sm-6">
-            <h1>
-              Portal de Pesquisas
-              <br />
-              <small>POPE</small>
-            </h1>
-            <div className="rounded btn-group  col-sm-12 mt-5 p-2">
-              <span className="fa fa-search mt-2" />
-              <Form
+        <Container>
+          <div className="container-fluid row">
+            <div className="container-fluid my-header-1 col-sm-6">
+              <Image
+                className="my-img"
+                src={logoBay}
                 style={{
-                  marginTop: -60,
-                  display: 'flex',
-                  flexDirection: 'row',
+                  marginLeft: 136,
+                  maxWidth: 10000,
                 }}
-              >
-                <input
-                  type="text"
-                  placeholder="digite o que precisa"
+              />
+            </div>
+            <div className="container-fluid my-header-2 col-sm-6">
+              <h1>
+                Portal de Pesquisas
+                <br />
+                <small>POPE</small>
+              </h1>
+              <div className="rounded btn-group  col-sm-12 mt-5 p-2">
+                <span className="fa fa-search mt-2" />
+                <Form
                   style={{
-                    fontStyle: 'italic',
-                    borderRadius: 38,
-                    marginTop: 30,
+                    marginTop: -60,
+                    display: 'flex',
+                    flexDirection: 'row',
                   }}
-                />
-                <Button
-                  type="submit"
-                  style={{ borderRadius: 40, marginTop: 30 }}
                 >
-                  <FaSearch color="#fff" size={14} />
-                  <b> Pesquisar na comunidade</b>
-                </Button>
-              </Form>
+                  <input
+                    type="text"
+                    placeholder="digite o que precisa"
+                    style={{
+                      fontStyle: 'italic',
+                      borderRadius: 38,
+                      marginTop: 30,
+                    }}
+                  />
+                  <Button
+                    type="submit"
+                    style={{ borderRadius: 40, marginTop: 30 }}
+                  >
+                    <FaSearch color="#fff" size={14} />
+                    <b> Pesquisar na comunidade</b>
+                  </Button>
+                </Form>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="container p-1 my-body">
-          <div className="row">
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
-            <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
-              <Card.Body>
-                <h2> Título </h2>
-                <br />
-                <tr>
-                  <FaMapMarkerAlt />
-                  Endereço:
-                </tr>
-                <tr>
-                  <FaPhone />
-                  Telefones:
-                </tr>
-                <tr>
-                  <FaClock />
-                  Horário de Funcionamento:
-                </tr>
-                <tr>
-                  <FaList />
-                  Serviços:
-                </tr>
-                <FaThumbsUp />
-                Possui Serviços Gratuitos
-              </Card.Body>
-            </Card>
+          <div className="container p-1 my-body">
+            <div className="row">
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+              <Card className="my-box-1  col-sm-6 col-md-6 col-lg-3">
+                <Card.Body>
+                  <h2> Título </h2>
+                  <br />
+                  <tr>
+                    <FaMapMarkerAlt />
+                    Endereço:
+                  </tr>
+                  <tr>
+                    <FaPhone />
+                    Telefones:
+                  </tr>
+                  <tr>
+                    <FaClock />
+                    Horário de Funcionamento:
+                  </tr>
+                  <tr>
+                    <FaList />
+                    Serviços:
+                  </tr>
+                  <FaThumbsUp />
+                  Possui Serviços Gratuitos
+                </Card.Body>
+              </Card>
+            </div>
           </div>
-        </div>
-        <div className="container-fluid " />
+          <div className="container-fluid " />
 
-        <Footer />
+          <Footer />
+        </Container>
       </>
     );
   }
