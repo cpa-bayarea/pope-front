@@ -5,7 +5,7 @@ import FooterComponent from './styles';
 export default function Footer() {
   return (
     <>
-      <FooterComponent>
+      <FooterComponent className="container-fluid">
         <p>
           <b>Portal de Pesquisas POPE</b>
           <b style={{ float: 'right' }}>

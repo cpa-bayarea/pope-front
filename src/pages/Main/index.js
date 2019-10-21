@@ -46,11 +46,7 @@ export default class Main extends Component {
             height="100"
             src={logoBay}
             alt="logoBay"
-            style={{
-              marginLeft: 298,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
+            style={{ padding: 15, height: 140, width: 140, marginLeft: '35%' }}
           />
         </Logo>
 
